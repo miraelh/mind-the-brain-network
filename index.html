@@ -1,0 +1,2104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mind the Brain Network</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #EAF6F6;
+      color: #000000;
+    }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #fff; /* Or your theme background */
+}
+
+.logo img {
+  height: 70px; /* Adjust size as needed */
+  max-width: 450px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+}
+
+    nav a:hover {
+      color: #003080;
+    }
+
+    .hero {
+      background-color: #002f804a;
+      text-align: center;
+      padding: 100px 20px;
+
+    }
+
+    
+
+    .hero h1 {
+      font-size: 3rem;
+      color: #003080;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      color: #000000;
+      max-width: 700px;
+      margin: 0 auto 40px;
+    }
+
+    .hero a.button {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #003080;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .hero a.button:hover {
+      background-color: #003080;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.25rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+
+  
+    .hero {
+  padding: 60px 20px;
+  background-color: #002f8035;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1 1 50%;
+  color: #000000;
+}
+
+.hero-image {
+  flex: 1 1 50%;
+  text-align: right;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+    .about {
+  background-color: #ffffff;
+  padding: 80px 40px;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  color: #004AAD;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #000000;
+  margin-bottom: 20px;
+  font-weight: 410;
+}
+
+.about-image {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+
+
+.about-section {
+  background-color: #f6f9fc;
+  padding: 60px 20px;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #333;
+}
+
+.about-section .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.mission-vision {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.block h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.block p {
+  line-height: 1.6;
+}
+
+.core-values h3 {
+  font-size: 1.7rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.value-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.value-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.value-card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+
+
+/* SDGS */
+/* SDG Cards */
+.sdg-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.sdg-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  text-align: center;
+  flex: 1 1 300px;
+  max-width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.sdg-card:hover {
+  transform: translateY(-5px);
+}
+
+.sdg-card img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.sdg-card h3 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.sdg-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+
+
+.educ-card {
+  margin: 20px 0 20px 0 ;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  text-align: left;
+  flex: 1 1 300px;
+  max-width: auto;
+  transition: transform 0.3s ease;
+}
+
+.educ-card:hover {
+  transform: translateY(-5px);
+}
+
+.educ-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  display: block;
+}
+
+
+.ediuc-card h3 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.educ-card p {
+  color: #000000;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+
+/* buttonssssssss */
+
+
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        white-space: nowrap;
+        border-radius: 0.375rem;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        font-weight: 500;
+        transition: all 0.2s;
+        cursor: pointer;
+        border: none;
+      }
+
+
+      .btn-primary {
+        background-color: #003080;
+        color: white;
+      }
+      
+      .btn-primary:hover {
+        background-color: #002f8024;
+      }
+      
+      .btn-outline {
+        background-color: transparent;
+        color: #003080;
+        border: 1px solid #003080;
+      }
+      
+      .btn-outline:hover {
+        background-color: #002f803c;
+      }
+      
+      .btn-white {
+        background-color: #002f80;
+        color: #ffffff;
+      }
+      
+      .btn-white:hover {
+        background-color: #002f80be;
+      }
+      
+      .btn-textalone {
+        background-color: rgba(255, 255, 255, 0);
+        
+        color: #003080;
+      }
+      
+      .btn-textalone:hover {
+        color: #002f8076;
+      }
+      
+
+
+
+
+
+
+
+
+
+
+
+/* ACCORDIONNN */
+/* Modern Accordion Styles */
+.accordion {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+}
+
+.accordion-item {
+  background: #ffffff;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-button {
+  position: relative; /* Add this line */
+  width: 100%;
+  padding: 18px;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 0px;
+}
+
+
+.accordion-button:hover {
+  background-color: #c4e7ff;
+  transform: translateY(-2px);
+}
+
+.accordion-button:focus {
+  outline: none;
+  background-color: #ffffff;
+  transform: translateY(-2px);
+  border-left: 3px #003080 solid;
+}
+
+.accordion-content {
+  display: none;
+  padding: 20px;
+  background-color: #ecf0f1;
+  font-size: 1rem;
+  /* border-top: 3px solid #2600ff; */
+  border-left: 3px #003080 solid;
+  border-radius: px;
+  transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.accordion-content p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.accordion-content.open {
+  display: block;
+  padding: 20px;
+}
+
+.accordion-button::after {
+  content: '+';
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+  top: 18px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.accordion-button.open::after {
+  content: '–';
+}
+
+
+
+
+
+
+
+
+
+
+
+.tabs-section {
+  padding: 80px 40px;
+  background-color: #F4FBFF;
+  text-align: center;
+}
+
+.tabs-title {
+  font-size: 2.5rem;
+  color: #003080;
+  margin-bottom: 40px;
+}
+
+.browser-tabs {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.tab-bar {
+  display:flex;
+  gap: 4px;
+  /* background: #e0e0e0; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 0px;
+  height: 45px;
+  align-items: flex-end;
+}
+
+.tab-bar {
+  display: flex;
+  padding: 0;
+  margin-bottom: -1px; /* aligns nicely with content */
+  background: transparent;
+  border-bottom: 2px solid #ccc;
+}
+
+.tab-btn {
+  flex: 1; /* Equal width for all tabs */
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: 12px 0;
+  font-weight: bold;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.tab-btn.active {
+  border-bottom: 3px solid #004AAD;
+  color: #004AAD;
+  background-color: transparent;
+}
+
+.tab-btn:hover {
+  color: #004AAD;
+}
+
+
+.tab-contents {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.tab-content {
+  display: none;
+  padding: 30px 20px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tab-text {
+  flex: 1 1 50%;
+}
+
+.tab-image {
+  flex: 1 1 40%;
+  text-align: right;
+}
+
+.tab-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+
+    .carousel {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+    }
+
+    .slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      z-index: 0;
+    }
+
+    .slide.active {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    .overlay.full {
+      position: absolute;
+      inset: 0;
+      background-color: #002f8077;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .text-box {
+      color: white;
+      max-width: 800px;
+      padding: 20px;
+      font-weight: 500;
+      text-shadow: 4px 2px 8px rgb(0, 0, 0);
+    }
+
+    .text-box h2 {
+      font-size: 2 rem;
+      margin-bottom: 20px;
+    }
+
+    .text-box p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+
+
+    .text-box h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.text-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.text-box ul li {
+  font-size: 1.05rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.4;
+}
+
+
+
+
+
+.text-box ul.sublist {
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.text-box ul.sublist li {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 3rem;
+      color: white;
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 10;
+      padding: 0 20px;
+    }
+
+    .arrow.left {
+      left: 0;
+    }
+
+    .arrow.right {
+      right: 0;
+    }
+
+    .arrow:hover {
+      color: #ccc;
+    }
+
+
+
+    .card-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.card-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  min-width: 250px;
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 10px;
+  scroll-snap-align: start;
+  cursor: pointer;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 10px;
+}
+
+.card > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background-color: #fff;
+  max-width: 600px;
+  width: 90%;
+  padding: 30px;
+  border-radius: 15px;
+  position: relative;
+  text-align: center;
+}
+
+.modal-content h2 {
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 2rem;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+.footer {
+  background-color: #003080;
+  color: #f1f1f1;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.footer-tagline {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  color: #ccc;
+}
+
+.footer-links {
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: #ffffff;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+
+.contact-card-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-card {
+  background: #fff;
+  color: #333;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.contact-card a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.8rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #999;
+}
+
+
+
+.about-card .about-content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.about-card .about-text {
+  flex: 1;
+}
+
+.about-card .about-image {
+  flex: 0 0 150px;
+}
+
+.about-card .about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Responsive stacking for smaller screens */
+@media (max-width: 600px) {
+  .about-card .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-card .about-image {
+    flex: none;
+    width: 100px;
+    margin-top: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="Logo mind the brain.png" alt="Mind the Brain Logo" />
+    </div>
+    <nav>
+      <ul>
+        <button class="btn btn-textalone" onclick="scrollToSection('about')">
+            About
+          </button>
+        
+
+          <button class="btn btn-textalone" onclick="scrollToSection('neurodivergence')">
+            NeuroDiversity
+          </button>
+        
+      </ul>
+    </nav>
+  </header>
+  
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Mind the Brain Network</h1>
+        <p>Building a world where neurodiversity is understood, respected, and empowered — through education, design, and community.</p>
+        <button class="btn btn-white" onclick="scrollToSection('about')">Learn More</button>
+        <button class="btn btn-outline" onclick="scrollToSection('offerings')">What We Offer</button>
+        <p><button class="btn btn-textalone" onclick="scrollToSection('neurodivergence')">What is NeuroDiversity?</button></p>
+      </div>
+      <div class="hero-image">
+        <img src="ND-DG+Poster4.png" alt="Brain">
+      </div>
+    </div>
+  </section>
+  
+
+
+<!-- About Section -->
+<section  id="about" class="about">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>About Mind the Brain</h2>
+        <p>
+         
+            Mind the Brain Network is a multi-dimensional platform and initiative that builds inclusive spaces (physical and social), supports neurodivergent individuals and their families, and works to educate society through design, storytelling, and community empowerment.
+            It aims to reduce stigma, revolutionize learning, and transform how we build schools, cities, and Societies  — not just to accommodate difference, but to celebrate it.
+            
+            
+         
+            Mind the Brain is a movement dedicated to fostering understanding, respect, and empowerment for neurodivergent individuals. 
+          Our mission is to create inclusive environments through education, design innovation, and strong community connections.
+        </p>
+        <p>
+          We believe in celebrating cognitive diversity and promoting mental health awareness as essential to a thriving, just society.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="Diversity.jpeg" alt="Mind the Brain illustration" />
+      </div>
+    </div>
+  </section>
+
+  <section class="tabs-section">
+    <div class="container">
+      <h2 class="section-title">🌍 Mission, Vision & Values</h2>
+  
+      <div class="mission-vision">
+        <div class="block">
+          <h3>🌍 Mission</h3>
+          <p>To build a world that embraces neurodiversity by transforming how we design spaces, structure education, and support mental health. We create inclusive environments — both physical and social — that empower neurodivergent individuals and their families through community, research, storytelling, and systemic advocacy.</p>
+        </div>
+        <div class="block">
+          <h3>🌟 Vision</h3>
+          <p>A just and inclusive society where every individual — regardless of neurological makeup — feels safe, supported, and celebrated. A world where education is accessible to all, design uplifts everyone, and communities are shaped by compassion, dignity, and the shared belief that difference is a strength.</p>
+        </div>
+      </div>
+  
+      <div class="core-values">
+        <h3>💛 Core Values</h3>
+        <div class="values-grid">
+          <div class="value-card">
+            <h4>Inclusion</h4>
+            <p>We prioritize accessibility, diversity, and equity in everything we do — from classroom layouts to community support systems.</p>
+          </div>
+          <div class="value-card">
+            <h4>Human Rights</h4>
+            <p>We believe neurodiversity is a fundamental human rights issue and advocate for dignity, safety, and agency for all.</p>
+          </div>
+          <div class="value-card">
+            <h4>Community Empowerment</h4>
+            <p>We build networks that connect, support, and uplift families, educators, and individuals with lived experience.</p>
+          </div>
+          <div class="value-card">
+            <h4>Education for All</h4>
+            <p>We challenge traditional education systems and work to create adaptive, inclusive, and meaningful learning environments.</p>
+          </div>
+          <div class="value-card">
+            <h4>Design Justice</h4>
+            <p>We leverage inclusive and biophilic design to reimagine schools, therapy spaces, and cities as places of healing and belonging.</p>
+          </div>
+          <div class="value-card">
+            <h4>Awareness & Advocacy</h4>
+            <p>We use storytelling, campaigns, and research to dismantle stigma and reshape societal narratives around neurodiversity.</p>
+          </div>
+          <div class="value-card">
+            <h4>Collaboration</h4>
+            <p>We work across disciplines — architecture, health, education, and technology — to create sustainable, intersectional change.</p>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </section>
+
+
+
+
+
+
+<!-- SDG Section -->
+<section class="tabs-section">
+    <h2 style="text-align:center; font-size:2rem; margin-bottom:40px; color: #2c3e50;">Our Focused SDGs</h2>
+    <div class="sdg-container">
+      <div class="sdg-card">
+        <img src="E-Goal-03-1024x1024.png" alt="SDG 3" />
+        <h3>Good Health & Well-being</h3>
+        <p>Ensure healthy lives and promote well-being for all at all ages.</p>
+      </div>
+      <div class="sdg-card">
+        <img src="Sustainable_Development_Goal_4.png" alt="SDG 4" />
+        <h3>Quality Education</h3>
+        <p>Ensure inclusive and equitable quality education and promote lifelong learning.</p>
+      </div>
+      <div class="sdg-card">
+        <img src="Sustainable_Development_Goal_10ReducedInequalities.svg.png" alt="SDG 10" />
+        <h3>Reduced Inequalities</h3>
+        <p>Reduce inequality within and among countries, empowering all people equally.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <section class="tabs-section">
+    <h2 class="tabs-title">
+        
+      What we do
+    </h2>
+    <!-- <p>Explore the values and stories behind Mind the Brain</p> -->
+  </section>
+
+
+
+
+  <section id="offerings" class="carousel-section">
+    
+    <div class="carousel" id="carousel1">
+      <div class="slide active" style="background-image: url('holding-hands.png');">
+        <div class="overlay full">
+          <div class="text-box">
+            <h2>🧠 1. Inclusive Design for Learning & Healing</h2>
+            <ul>
+              <li>Design of Inclusive Spaces: Use architectural expertise to create adaptable, sensory-friendly, biophilic environments for therapy, learning, and community gathering.</li>
+              <li>Prototype Spaces: Pilot in schools, community centers, or clinics with neurodiversity-informed design.</li>
+              <li>Toolkits for Institutions: Create guidelines and templates for schools and therapy centers to implement inclusive design affordably.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <div class="slide" style="background-image: url('modernclassrom.png');">
+        <div class="overlay full">
+          <div class="text-box">
+            <h2>📚 2. Educational Reform & Access</h2>
+            <ul>
+              <li>Inclusive Education Advocacy: Push for curriculum changes that respect neurodiverse learning needs.</li>
+              <li>Workshops for Educators: Train teachers and administrators on neurodiversity, empathy, and differentiated learning methods.</li>
+              <li>Curriculum Co-Design: Collaborate with neurodivergent students and families to reimagine educational experiences.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <div class="slide" style="background-image: url('Healthcare_spaces.webp');">
+        <div class="overlay full">
+          <div class="text-box">
+            <h2>🔬 3. Research & Development Hub</h2>
+            <ul>
+              <li>Research Center: Conduct studies on how environment affects neurodiverse learning, mental health, and wellbeing.</li>
+              <li>Data-Driven Insights: Partner with universities or research bodies to publish findings on inclusive education and design.</li>
+              <li>Evidence-Based Design: Use findings to refine space planning, learning models, and therapy practices.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <div class="slide" style="background-image: url('DigitalLibrary.webp');">
+        <div class="overlay full">
+          <div class="text-box">
+            <h2>🌐 4. Open Knowledge Platform</h2>
+            <ul>
+              <li>
+                Open-Source Library: Create a free digital platform housing:
+                <ul class="sublist">
+                  <li>Design guides</li>
+                  <li>Inclusive learning materials</li>
+                  <li>Mental health resources</li>
+                  <li>Case studies</li>
+                  <li>Success stories</li>
+                </ul>
+              </li>
+              <li>Downloadable Toolkits: Resources for parents, teachers, therapists, and designers.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+  
+      <div class="slide" style="background-image: url('Publicspeaking.jpg');">
+        <div class="overlay full">
+          <div class="text-box">
+            <h2>🗣️ 5. Awareness & Advocacy</h2>
+            <ul>
+              <li>Stigma-Breaking Campaigns: Use storytelling, social media, and community events to normalize neurodiversity.</li>
+              <li>Youth & Parent Panels: Include neurodivergent voices in shaping the narrative and strategy.</li>
+              <li>Art & Culture Integration: Host exhibitions, talks, or art projects to foster emotional connection and understanding.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <div class="slide" style="background-image: url('familysupportgroups.jpg');">
+        <div class="overlay full">
+          <div class="text-box">
+            <h2>👨‍👩‍👧‍👦 6. Family & Individual Support</h2>
+            <ul>
+              <li>Therapy Programs: Offer accessible, community-based group and individual sessions.</li>
+              <li>Peer & Family Support Groups: Regular meetups and shared learning for caregivers, parents, and individuals.</li>
+              <li>Mobile Support Services: Bring education, therapy, and workshops to underserved or remote communities.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <div class="slide" style="background-image: url('Community-1024x452.png');">
+        <div class="overlay full">
+          <div class="text-box">
+            <h2>🤝 7. Community & Network Building</h2>
+            <ul>
+              <li>“Mind the Brain” Local Hubs: Set up regional branches that tailor the approach to their specific communities.</li>
+              <li>Ambassador Program: Train local changemakers to lead programs, spread awareness, and activate networks.</li>
+              <li>Digital Community Space: A moderated platform for exchange, support, events, and collaboration.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <!-- <div class="slide" style="background-image: url('https://via.placeholder.com/1600x600?text=Slide+8');">
+        <div class="overlay full">
+          <div class="text-box">
+            <h2>💥 Moonshot Impact Integration</h2>
+            <ul>
+              <li>SDG Focus: Health (well-being, access), Education (inclusive, reform), Reduced Inequalities, Sustainable Cities.</li>
+              <li>Scalable Prototype: Start small — one pilot hub — then scale nationally or regionally.</li>
+              <li>Youth-Centered Innovation: Youth co-design, lead, and evaluate the initiative to ensure relevance and longevity.</li>
+            </ul>
+          </div>
+        </div>
+      </div> -->
+  
+      <button class="arrow left" onclick="prevSlide('carousel1')">❮</button>
+      <button class="arrow right" onclick="nextSlide('carousel1')">❯</button>
+    </div>
+  </section>
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- 1stttt Tabbed Interface Section -->
+  <section class="tabs-section">
+    <h2 class="tabs-title">Health and Wellbeing </h2>
+    <div class="browser-tabs">
+      <div class="tab-bar">
+        <button class="tab-btn active" onclick="showTab(0)">The Problem</button>
+        <button class="tab-btn" onclick="showTab(1)">Our Soultion</button>
+        <button class="tab-btn" onclick="showTab(2)">Why it Works</button>
+        <button class="tab-btn" onclick="showTab(3)">Vision and Impact</button>
+        <!-- <button class="tab-btn" onclick="showTab(4)">Community</button> -->
+    </div>
+      <div class="tab-contents">
+        <div class="tab-content active">
+            <div class="tab-inner">
+              <div class="tab-text">
+                <h3>Mental Health Is Not One-Size-Fits-All</h3>
+                <ul style="list-style-type: none; padding: 0; font-size: 1.2rem; color: #000000;">
+                    <li style="margin-bottom: 20px;">
+                      <strong>🚫 Neurodivergent individuals</strong> face significant barriers in accessing care
+                    </li>
+                    <li style="margin-bottom: 20px;">
+                      <strong>🏥 Clinical settings</strong> are unaffordable and can be overstimulating and unwelcoming
+                    </li>
+                    <li style="margin-bottom: 20px;">
+                      <strong>💔 Families</strong> often lack support and ressources, and community-based resources are rare
+                    </li>
+                    <li>
+                      <strong>❌ Stigma</strong> continues to prevent people from seeking help
+                    </li>
+                  </ul>
+                
+            </div>
+              <div class="tab-image">
+                <img src="Hospital-hallway2.jpg" alt="Tab 1">
+              </div>
+            </div>
+          </div>
+
+
+
+
+        <div class="tab-content">
+            <div class="tab-text">
+                <h3>Mind the Brain Principles</h3>
+                <ul style="list-style-type: none; padding: 0; font-size: 1.2rem; color: #000000;">
+                    <li style="margin-bottom: 20px;">
+                      <strong>🌍 A scalable, inclusive model</strong> that brings therapy, education, and community support together
+                    </li>
+    
+                    <li style="margin-bottom: 20px;">
+                      <strong>🌿 Biophilic design</strong> at the core: sensory-informed spaces incorporating natural light, plants, and calming natural elements
+                    </li>
+                    <li style="margin-bottom: 20px;">
+                      <strong>🛋️ Safe, sensory-informed spaces</strong> for therapy and workshops
+                    </li>
+                    <li style="margin-bottom: 20px;">
+                      <strong>👨‍👩‍👧‍👦 Group and individual programs</strong> that include and support families
+                    </li>
+                    <li>
+                      <strong>📚 Anchored by a research and learning hub</strong> for continuous impact
+                    </li>
+                  </ul>
+
+
+            </div>
+        </div>
+
+
+
+
+        <div class="tab-content">
+            <div class="tab-text">
+                <h3>Designing for Belonging = Better Health Outcomes for Everyone</h3>
+                <ul style="list-style-type: none; padding: 0; font-size: 1.2rem; color: rgb(0, 0, 0); max-width: 900px; margin: 0 auto;">
+                    <li style="margin-bottom: 20px;">
+                      🌿 <strong>Environment affects healing</strong> — biophilic design enhances Mental and Physical well-being by connecting individuals with nature
+                    </li>
+                    <li style="margin-bottom: 20px;">
+                      🍃 <strong>Nature-inspired spaces</strong> improve focus, reduce anxiety, and foster calmness — essential for both therapy and learning
+                    </li>
+                    <li style="margin-bottom: 20px;">
+                      👨‍👩‍👧‍👦 <strong>Families and communities</strong> become part of the care process in a Safe, <strong>Diverse</strong> and  <strong>Inclusive</strong> environment
+                    </li>
+                    <li style="margin-bottom: 20px;">
+                      🪟 <strong>Programs reduce stigma</strong> and advocates for Systemic Change and Accommodation
+                    </li>
+                    <li>
+                      🏫 <strong>It’s Modular</strong> — adaptive and customizable to Schools, Clinics, Workplaces, Public centers, and beyond
+                    </li>
+                  </ul>
+
+            </div>
+        </div>
+
+
+        <div class="tab-content">
+            <div class="tab-text">
+                <h2>A Healthier Future for All</h2>
+                <ul style="list-style-type: none; padding: 0; font-size: 1.2rem; color: rgb(0, 0, 0);">
+                    <li style="margin-bottom: 20px;">
+                      <strong>🩺 Improves</strong> delivery and accessibility of mental healthcare.
+                    </li>
+                    <li style="margin-bottom: 20px;">
+                      <strong>⚖️ Addresses equity</strong> by focusing on marginalized neurodiverse individuals.
+                    </li>
+                    <li style="margin-bottom: 20px;">
+                      <strong>🔄 Sparks</strong> systems change at the intersection of design, care, and education.
+                    </li>
+                    <li>
+                      <strong>🌍 Vision:</strong> A world where everyone can feel safe, supported, and seen.
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+<!-- 
+
+        <div class="tab-content">
+            
+          <p>Through inclusive design, we advocate for environments that support diverse cognitive and sensory needs in schools, workplaces, and public spaces.</p>
+        </div>
+        <div class="tab-content">
+          <p>Our community programs aim to empower neurodivergent individuals and their families by building support networks and advocating for systemic change.</p>
+        </div>
+      </div>
+    </div> -->
+  </section>
+
+
+
+
+
+  
+<!-- 2nddddddddd Tabbed Interface Section -->
+  <section class="tabs-section">
+    <h2 class="tabs-title">Learning and Education </h2>
+    <!-- <div class="browser-tabs">
+      <div class="tab-bar">
+        <button class="tab-btn active" onclick="showTab(0)">The Problem</button>
+        <button class="tab-btn" onclick="showTab(1)">Our Soultion</button>
+        <button class="tab-btn" onclick="showTab(2)">Why it Works</button>
+        <button class="tab-btn" onclick="showTab(3)">Vision and Impact</button>
+        <button class="tab-btn" onclick="showTab(4)">Community</button>
+    </div> -->
+        <div class="educ-card">
+        <!-- <div class="tab-content active">
+            <div class="tab-inner">
+              <div class="tab-text"> -->
+                <h3 style="text-align: center;">The Problem: Education That Excludes</h3>
+                <ul style="list-style-type: none; padding: 0; font-size: 1.2rem; color: #000000;">
+                    <li>One of the core societal problems Mind the Brain Network seeks to address is the exclusion of neurodivergent and special needs individuals from mainstream education.</li>
+                    <li>Around the world, children who think, feel, or learn differently are routinely denied access to regular classrooms.</li>
+                    <li>Instead, they’re placed in costly “special education” tracks or left with no support at all.</li>
+                    <li>This isn’t just an educational issue — it’s a human rights crisis.</li>
+                    <li>Many families cannot afford these specialized services, leading to a cycle of inequality, stigma, and lost potential.</li>
+                    <li>Public education systems are built for the “average” student, leaving those with diverse learning needs to either adapt on their own or fall behind.</li>
+                    <li>This rigid, one-size-fits-all model harms not only neurodivergent students, but all learners who don’t fit the mold.</li>
+                    <!-- <li>And while awareness is growing, systemic change remains painfully slow.</li> -->
+                </ul>
+                <img         
+                src="Educ-exclusion.jpg" alt="Exclusion">
+
+                
+        </div>
+
+        
+
+        <div class="educ-card">
+            <!-- <div class="tab-text"> -->
+                <h3 style="text-align: center;">Our Solution: Mind the Brain Network</h3>
+                <ul style="list-style-type: none; padding: 0; font-size: 1.2rem; color: #000000;">
+                    
+                        <li>Mind the Brain Network is a bold, inclusive response — a platform, a movement, and a vision for the future.</li>
+                        <li>We believe education must evolve to include, empower, and celebrate every mind.</li>
+                        <li>Our solution is multi-dimensional: we combine inclusive design, educational advocacy, and community-based support.</li>
+                        <li>We envision a future where schools are designed with biophilic, sensory-friendly, and neuroinclusive spaces — where children learn in environments that support mental well-being and cognitive diversity.</li>
+                        <li>Our initiative also includes a research and support center offering therapy (individual and group), family resources, and professional training.</li>
+                        <li>Through open-source materials, public awareness campaigns, and an empowering digital network, we help schools, families, and communities shift from accommodation to celebration of neurodiversity.</li>
+                        <li>Mind the Brain Network isn’t just about fixing a system — it’s about reimagining it.</li>
+                </ul>
+                <img src="Educ-inclusion.jpg" alt="inclusion">
+
+
+            <!-- </div> -->
+          
+        </div>
+    </div>
+
+
+
+
+    
+        </div>
+
+
+
+
+        <div class="tab-content">
+            <div class="tab-text">
+                <h3>Designing for Belonging = Better Health Outcomes</h3>
+                <ul style="list-style-type: none; padding: 0; font-size: 1.2rem; color: rgb(0, 0, 0); max-width: 900px; margin: 0 auto;">
+                    <li style="margin-bottom: 20px;">
+                      🌿 <strong>Environment affects healing</strong> — biophilic design enhances emotional and cognitive well-being by connecting individuals with nature.
+                    </li>
+                    <li style="margin-bottom: 20px;">
+                      🍃 <strong>Nature-inspired spaces</strong> improve focus, reduce anxiety, and foster calmness — essential for both therapy and learning.
+                    </li>
+                    <li style="margin-bottom: 20px;">
+                      👨‍👩‍👧‍👦 <strong>Families and communities</strong> become part of the care process in a comfortable, nature-infused environment.
+                    </li>
+                    <li style="margin-bottom: 20px;">
+                      🪟 <strong>Programs reduce stigma</strong> by being open, visible, and approachable.
+                    </li>
+                    <li>
+                      🏫 <strong>It’s replicable</strong> — adaptable to schools, clinics, community centers, and beyond.
+                    </li>
+                  </ul>
+
+            </div>
+        </div>
+
+
+        <div class="tab-content">
+            <div class="tab-text">
+                <h2>A Healthier Future for All</h2>
+                <ul style="list-style-type: none; padding: 0; font-size: 1.2rem; color: rgb(0, 0, 0);">
+                    <li style="margin-bottom: 20px;">
+                      <strong>🩺 Improves</strong> delivery and accessibility of mental healthcare.
+                    </li>
+                    <li style="margin-bottom: 20px;">
+                      <strong>⚖️ Addresses equity</strong> by focusing on marginalized neurodiverse individuals.
+                    </li>
+                    <li style="margin-bottom: 20px;">
+                      <strong>🔄 Sparks</strong> systems change at the intersection of design, care, and education.
+                    </li>
+                    <li>
+                      <strong>🌍 Vision:</strong> A world where everyone can feel safe, supported, and seen.
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+<!-- 
+
+        <div class="tab-content">
+            
+          <p>Through inclusive design, we advocate for environments that support diverse cognitive and sensory needs in schools, workplaces, and public spaces.</p>
+        </div>
+        <div class="tab-content">
+          <p>Our community programs aim to empower neurodivergent individuals and their families by building support networks and advocating for systemic change.</p>
+        </div>
+      </div>
+    </div> -->
+  </section>
+
+
+
+
+<!-- NEURODIVERGENCEEE WHAT IT ISSS -->
+<section class="tabs-section">
+    <h2 id="neurodivergence" class="tabs-title">Neurodiversity </h2>
+        <div class="educ-card">
+
+            <h3 style="text-align: center;">NeuroDivergence in the World</h3>
+
+            <!-- <h4 style="text-align: center;">ADHD Prevalence by Age</h4> -->
+            <img src="Neurodivergence-in-the-world.png" alt="Prevalence">
+
+
+            <strong>1 in every 6 people is NeuroDivergent </strong>
+            <div>Between 15 and 20% of the world population are estimated to be neurodivergent</div>
+            </strong>
+
+            And this number is expected to grow, as the diagnosis is getting more and more accessible
+
+
+
+
+            <h4 style="text-align: center;">ADHD Prevalence by Age</h4>
+            <img src="ADHD Prevalence by Age.png" alt="Prevalence by age">
+
+            <h4 style="text-align: center;">ADHD Prevalence by Gender</h4>
+            <img src="ADHD Prevalence by Gender.png" alt="Prevalence by gender">
+
+            
+                  <strong>ADHD is, biologically speaking, as likely to be found in girls as in boys.</strong>
+
+                  Yet some of the reasons why fewer girls are diagnosed include:
+                  <ul style="margin-top: 8px;">
+                    <li>Girls are taught to “mask” and “behave” better than boys.</li>
+                    <li>“Social norms” expect girls to sit and behave in a certain way.</li>
+                    <li>Traits are often overlooked — girls are seen as “too sensitive” or “emotional.”</li>
+                  </ul>
+
+              
+
+                
+        </div>
+        
+        <div class="educ-card">
+
+            <h3 style="text-align: center;">Risk Factors</h3>
+
+            <img src="Neurodivergence-risks.png" alt="Neurodivergence-risks">
+
+
+            Neurodivergent Adults, are more likely to end up unemployed, are more likely to have depression and suicidal tendencies
+
+
+        </div>
+
+
+</section>
+
+
+<section class="tabs-section">
+        
+        <h2 class="tabs-title">Neurodiversity: the Concept </h2>
+        <div class="educ-card">
+            <!-- <div class="tab-text"> -->
+
+  
+                    <strong>Judy Singer</strong>, <br>
+                    <strong>Australian sociologist on the autism spectrum</strong>
+
+                      Coined the term <strong>NeuroDiversity</strong> in the <strong>1990s</strong>
+                    </li>
+            <div></div>
+            <div></div>
+                      She rejected the idea that people with autism are disabled — 
+                      <strong>their brains just work differently</strong>
+
+                    <ul>
+                    <li>
+                      Activists in the autistic community and beyond <strong>embrace</strong> the term
+                    </li>
+                    <li>
+                      Used to <strong>reduce stigma</strong> and promote <strong>inclusion</strong> in schools and in the workplace
+                    </li>
+                    ⇒ <strong>Natural diversity</strong> of human minds and all the unique and different ways that people can exist, think, act, process, feel, and function
+
+                  </ul>
+                  
+
+            <!-- </div> -->
+          
+        </div>
+    </div>
+
+
+
+
+    <div class="educ-card">
+
+                <p><strong>Differences aren’t Deficits</strong> and are part of the mainstream.</p>
+                
+                <p><strong>“diagnosis”</strong> or <strong>“disability”</strong> are not ‘bad’ words or concepts.</p>
+                
+                <p>
+                  Being diagnosed with a disability gives people protections under the law and allows them to 
+                  <strong>receive special</strong> education or <strong>supports</strong> at school and 
+                  <strong>accommodations</strong> at work.
+                </p>
+                
+
+
+                <img style="max-width: 350px; " src="neuro-disability.png" alt="Prevalence">
+
+
+                <p>
+                  <strong>Neurodiversity and Disability coexist</strong><br>
+                  These terms aren’t interchangeable, but are both as valuable.
+                </p>
+    
+                <div class="neuro-coexist">
+                    <p>
+                      Acknowledging that <strong>Neurodiversity</strong> and <strong>Disability coexist</strong>
+                    </p>
+                    
+                    <p>
+                      It makes it less likely that kids will be overlooked or fall through the cracks in school.
+                    </p>
+                    
+                    <p>
+                      It makes it clear that everyone has challenges that deserve support.
+                    </p>
+                    
+                    <p>
+                      <strong>It makes it our duty, as educators, designers and architects, to cater for the needs of everyone.</strong>
+                    </p>
+                  </div>
+                  
+    </div>
+
+              
+              
+              
+
+        <!-- </div> -->
+      
+    </div>
+</div>
+
+</section>
+
+
+
+<section class="tabs-section">
+    <h2 class="tabs-title">NeuroDiversity: a Movement </h2>
+        <div class="educ-card">
+            <p>Emerged during the 1990s</p>
+            <p>aiming to promote <strong>Equality</strong></p>
+            <p><strong>Increase Acceptance</strong> and <strong>Inclusion</strong> of all people</p>
+            <p><strong>Embracing</strong> neurological differences.</p>
+        </div>
+
+        <div class="educ-card">
+            <p><strong>Differences don’t have to only be looked at as Weaknesses</strong></p>
+            <p>no problems that need to be “fixed” or “cured”</p>
+            <p>simply <strong>variations</strong> of the human brain</p>
+        </div>
+        
+        <div class="educ-card">
+            <p>It is simply a <strong>Biological Fact</strong>, as we are diverse in our minds just like we are Diverse in our Ethnicity, Gender, Sexuality, Race …</p>
+        </div>
+
+
+    
+</section>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  <!-- Accordion Section -->
+<!-- Accordion Section -->
+<section style="padding: 60px 20px;" class="tabs-section">
+    <h2 style="text-align:center; font-size:2rem; margin-bottom:30px; color: #2c3e50;">Accordion Section</h2>
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-button" onclick="toggleAccordion(1)">Item 1</button>
+        <div class="accordion-content" id="accordion-content-1">
+          <p>This is the content for item 1. You can add more details or images here. A great way to present information.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-button" onclick="toggleAccordion(2)">Item 2</button>
+        <div class="accordion-content" id="accordion-content-2">
+          <p>This is the content for item 2. You can add more details or images here. Feel free to explore different options.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-button" onclick="toggleAccordion(3)">Item 3</button>
+        <div class="accordion-content" id="accordion-content-3">
+          <p>This is the content for item 3. Provide insightful text, or embed media like videos or images.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-button" onclick="toggleAccordion(4)">Item 4</button>
+        <div class="accordion-content" id="accordion-content-4">
+          <p>This is the content for item 4. Add a well-structured text with images to enhance the user experience.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-button" onclick="toggleAccordion(5)">Item 5</button>
+        <div class="accordion-content" id="accordion-content-5">
+          <p>This is the content for item 5. Customize this section to your needs, offering great details for the user.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Carousel of Cards -->
+<!-- <section style="padding: 60px 20px;">
+    <h2 style="text-align:center; font-size:2rem; margin-bottom:20px;">Interactive Cards</h2>
+    <div class="card-carousel"> -->
+      <!-- Card Items -->
+      <!-- <div class="card" style="background-image: url('Sustainable_Development_Goal_10ReducedInequalities.svg.png');" onclick="openCard(1)">1</div>
+      <div class="card" style="background-image: url('https://via.placeholder.com/300x200?text=2');" onclick="openCard(2)">2</div>
+      <div class="card" style="background-image: url('https://via.placeholder.com/300x200?text=3');" onclick="openCard(3)">3</div>
+      <div class="card" style="background-image: url('https://via.placeholder.com/300x200?text=4');" onclick="openCard(4)">4</div>
+      <div class="card" style="background-image: url('https://via.placeholder.com/300x200?text=5');" onclick="openCard(5)">5</div>
+      <div class="card" style="background-image: url('https://via.placeholder.com/300x200?text=6');" onclick="openCard(6)">6</div>
+      <div class="card" style="background-image: url('https://via.placeholder.com/300x200?text=7');" onclick="openCard(7)">7</div>
+    </div>
+  </section> -->
+  
+  <!-- Modal Card Viewer -->
+  <!-- <div id="cardModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeCard()">&times;</span>
+      <div id="modalCardContent"></div>
+    </div>
+  </div> -->
+  
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<footer class="footer">
+    <div class="footer-content">
+      <div class="footer-title">Mind the Brain Network</div>
+      <p class="footer-tagline">Empowering neurodiversity through inclusive design and innovation</p>
+      <div class="footer-links">
+        <a href="#" id="aboutLink">About Me</a>
+        <a href="#" id="contactLink">Contact Us</a>
+
+      </div>
+      <p class="footer-copy">© 2025 Mind the Brain Network. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <!-- Contact Card Modal -->
+  <div class="contact-card-overlay" id="contactCard">
+    <div class="contact-card">
+      <button class="close-btn" id="closeContact">&times;</button>
+      <h3>Contact Us</h3>
+      <p>You can reach us at:</p>
+      <p><strong>Email:</strong> <a href="mailto:hello@mindthebrain.org">hello@mindthebrain.org</a></p>
+    </div>
+  </div>
+  
+  <!-- About Me Modal -->
+<!-- About Me Modal -->
+<div class="contact-card-overlay" id="aboutCard">
+    <div class="contact-card about-card">
+      <button class="close-btn" id="closeAbout">&times;</button>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>About Me</h3>
+          <p>I’m the founder of Mind the Brain — an initiative dedicated to advocating for neurodiversity, inclusive education, and mental health.</p>
+          <p>My background in architecture and human-centered design guides this mission to create compassionate spaces and systems for all minds.</p>
+        </div>
+        <div class="about-image">
+          <img src="your-photo.jpg" alt="Founder Photo">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+<script>
+  let carouselIntervals = {};
+
+  function startAutoSlide(id) {
+  if (carouselIntervals[id]) {
+    clearInterval(carouselIntervals[id]);
+  }
+
+  carouselIntervals[id] = setInterval(() => {
+    nextSlide(id);
+  }, 10000);
+}
+
+
+function nextSlide(id) {
+  const carousel = document.getElementById(id);
+  const slides = carousel.querySelectorAll('.slide');
+  let currentIndex = [...slides].findIndex(slide => slide.classList.contains('active'));
+
+  slides[currentIndex].classList.remove('active');
+  currentIndex = (currentIndex + 1) % slides.length;
+  slides[currentIndex].classList.add('active');
+
+  startAutoSlide(id); // 🔁 Reset timer
+}
+
+function prevSlide(id) {
+  const carousel = document.getElementById(id);
+  const slides = carousel.querySelectorAll('.slide');
+  let currentIndex = [...slides].findIndex(slide => slide.classList.contains('active'));
+
+  slides[currentIndex].classList.remove('active');
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+  slides[currentIndex].classList.add('active');
+
+  startAutoSlide(id); // 🔁 Reset timer
+}
+
+
+//   // Auto-slide every 5 seconds
+//   setInterval(() => nextSlide('carousel1'), 5000);
+//   setInterval(() => nextSlide('carousel2'), 5000);
+
+
+
+// Attach click events to the navigation arrows
+document.querySelector('.arrow.right').addEventListener('click', nextSlide);
+document.querySelector('.arrow.left').addEventListener('click', prevSlide);
+
+
+
+
+
+function showTab(index) {
+  const tabs = document.querySelectorAll('.tab-content');
+  const buttons = document.querySelectorAll('.tab-btn');
+  tabs.forEach((tab, i) => {
+    tab.classList.toggle('active', i === index);
+    buttons[i].classList.toggle('active', i === index);
+  });
+}
+
+
+
+function openCard(num) {
+  const modal = document.getElementById("cardModal");
+  const content = document.getElementById("modalCardContent");
+
+  content.innerHTML = `
+    <h2>Card ${num} Title</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. This is the detailed content of card ${num}.</p>
+  `;
+  
+  modal.style.display = "flex";
+}
+
+function closeCard() {
+  document.getElementById("cardModal").style.display = "none";
+}
+
+// Toggle the accordion content visibility and modify button style
+function toggleAccordion(index) {
+  const content = document.getElementById(`accordion-content-${index}`);
+  const allContents = document.querySelectorAll('.accordion-content');
+  const buttons = document.querySelectorAll('.accordion-button');
+  
+  // Close all sections first
+  allContents.forEach(item => item.classList.remove('open'));
+  buttons.forEach(button => button.classList.remove('open'));
+  
+  // Open the clicked section
+  if (content.style.display === 'block') {
+    content.classList.remove('open');
+  } else {
+    content.classList.add('open');
+  }
+}
+
+
+
+
+// FROM LOVABLE /////////////////////////////////
+////////////////////////////////////////////////////
+document.addEventListener('DOMContentLoaded', function() {
+        // Smooth scrolling for navigation
+        function scrollToSection(id) {
+          const element = document.getElementById(id);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+
+        // Make the scrollToSection function available globally
+        window.scrollToSection = scrollToSection;
+
+        // Carousel functionality
+        const carousel = {
+          slides: document.querySelector('.carousel-slides'),
+          slideWidth: document.querySelector('.carousel-slide').offsetWidth,
+          currentSlide: 0,
+          maxSlides: document.querySelectorAll('.carousel-slide').length,
+          indicators: document.querySelector('.carousel-dots'),
+          
+          init: function() {
+            // Create indicators
+            for (let i = 0; i < this.maxSlides; i++) {
+              const indicator = document.createElement('button');
+              indicator.classList.add('carousel-dot');
+              if (i === this.currentSlide) {
+                indicator.classList.add('active');
+              }
+              indicator.setAttribute('aria-label', `Go to slide ${i + 1}`);
+              indicator.dataset.slide = i;
+              this.indicators.appendChild(indicator);
+              
+              indicator.addEventListener('click', () => {
+                this.goToSlide(i);
+              });
+            }
+            
+            // Add event listeners for navigation
+            document.querySelector('.carousel-prev').addEventListener('click', () => {
+              this.prevSlide();
+            });
+            
+            document.querySelector('.carousel-next').addEventListener('click', () => {
+              this.nextSlide();
+            });
+            
+            // Auto-advance carousel
+            this.autoAdvance();
+            
+            // Handle window resize
+            window.addEventListener('resize', () => {
+              this.slideWidth = document.querySelector('.carousel-slide').offsetWidth;
+              this.updateSlidePosition();
+            });
+          },
+          
+          updateSlidePosition: function() {
+            this.slides.style.transform = `translateX(-${this.currentSlide * this.slideWidth}px)`;
+            
+            // Update indicators
+            document.querySelectorAll('.carousel-dot').forEach((indicator, index) => {
+              if (index === this.currentSlide) {
+                indicator.classList.add('active');
+              } else {
+                indicator.classList.remove('active');
+              }
+            });
+          },
+          
+          nextSlide: function() {
+            this.currentSlide = (this.currentSlide === this.maxSlides - 1) ? 0 : this.currentSlide + 1;
+            this.updateSlidePosition();
+          },
+          
+          prevSlide: function() {
+            this.currentSlide = (this.currentSlide === 0) ? this.maxSlides - 1 : this.currentSlide - 1;
+            this.updateSlidePosition();
+          },
+          
+          goToSlide: function(index) {
+            this.currentSlide = index;
+            this.updateSlidePosition();
+          },
+          
+          autoAdvance: function() {
+            setInterval(() => {
+              this.nextSlide();
+            }, 5000);
+          }
+        };
+        
+        carousel.init();
+        
+        // Handle navigation clicks
+        document.querySelectorAll('button[onclick^="scrollToSection"]').forEach(button => {
+          button.addEventListener('click', function() {
+            const sectionId = this.getAttribute('onclick').match(/'([^']+)'/)[1];
+            scrollToSection(sectionId);
+          });
+        });
+      });
+
+
+
+
+
+
+
+    //   footerrrrrrrrrrrr
+
+  const contactLink = document.getElementById('contactLink');
+  const contactCard = document.getElementById('contactCard');
+  const closeContact = document.getElementById('closeContact');
+
+  contactLink.addEventListener('click', function (e) {
+    e.preventDefault();
+    contactCard.style.display = 'flex';
+  });
+
+  closeContact.addEventListener('click', function () {
+    contactCard.style.display = 'none';
+  });
+
+  // Close when clicking outside the card
+  window.addEventListener('click', function (e) {
+    if (e.target === contactCard) {
+      contactCard.style.display = 'none';
+    }
+  });
+
+
+
+
+  const aboutLink = document.getElementById('aboutLink');
+const aboutCard = document.getElementById('aboutCard');
+const closeAbout = document.getElementById('closeAbout');
+
+aboutLink.addEventListener('click', function (e) {
+  e.preventDefault();
+  aboutCard.style.display = 'flex';
+});
+
+closeAbout.addEventListener('click', function () {
+  aboutCard.style.display = 'none';
+});
+
+window.addEventListener('click', function (e) {
+  if (e.target === aboutCard) {
+    aboutCard.style.display = 'none';
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>
