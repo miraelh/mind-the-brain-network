@@ -306,9 +306,9 @@ nav a {
 }
 
 
-.ediuc-card h3 {
+.educ-card h3 {
   font-size: 1.2rem;
-  color: #2c3e50;
+  color: #000000;
   margin-bottom: 10px;
 }
 
@@ -376,6 +376,59 @@ nav a {
         color: #002f8076;
       }
       
+
+.features-section {
+  padding: 50px 20px;
+}
+
+/* Table Styling */
+.features-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 20px;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Header Cells */
+.features-table th {
+  background-color: #002f804a;
+  font-weight: bold;
+  padding: 16px;
+  text-align: left;
+}
+
+/* Top-left and top-right only */
+.features-table th:first-child {
+  border-top-left-radius: 12px;
+}
+
+.features-table th:last-child {
+  border-top-right-radius: 12px;
+}
+
+/* Table Data Cells */
+.features-table td {
+  background-color: #ffffff;
+  padding: 16px;
+  text-align: left;
+  border: none;
+}
+
+/* Alternate Row Background */
+.features-table tr:nth-child(even) td {
+  background-color: #002f8018;
+  color: #000; /* Optional: ensure good contrast */
+}
+
+/* Optional: Font Styling */
+.features-table th,
+.features-table td {
+  font-size: 16px;
+  color: #222;
+}
 
 
 
@@ -960,9 +1013,13 @@ nav a {
           </button>
         
 
-          <button class="btn btn-textalone" onclick="scrollToSection('neurodivergence')">
-            NeuroDiversity
+          <button class="btn btn-textalone" onclick="scrollToSection('apptentative')">
+            App Concept
           </button>
+
+          <!-- <button class="btn btn-textalone" onclick="scrollToSection('neurodivergence')">
+            NeuroDiversity
+          </button> -->
         
       </ul>
     </nav>
@@ -1041,15 +1098,16 @@ nav a {
             </p>
           </div>
           <div class="value-card">
+            <h4>Equity</h4>
+            <p>We believe access to education, care, and belonging is a fundamental human right—not a privilege—working to dismantle stigma, discrimination, and systemic exclusion in Lebanon and beyond.
+            </p>
+          </div>
+          <div class="value-card">
             <h4>Community Empowerment</h4>
             <p>We equip individuals, families, and communities with knowledge, tools, and safe spaces to thrive, advocate for themselves, and shape a more just and supportive society.
             </p>
           </div>
-          <div class="value-card">
-            <h4>Dignity & Equity</h4>
-            <p>We believe access to education, care, and belonging is a fundamental human right—not a privilege—working to dismantle stigma, discrimination, and systemic exclusion in Lebanon and beyond.
-            </p>
-          </div>
+
           <!-- <div class="value-card">
             <h4>Design Justice</h4>
             <p>We leverage inclusive and biophilic design to reimagine schools, therapy spaces, and cities as places of healing and belonging.</p>
@@ -1510,6 +1568,19 @@ nav a {
 
 
 
+
+
+
+
+
+
+
+  
+
+
+
+
+
 <!-- NEURODIVERGENCEEE WHAT IT ISSS -->
 <section class="tabs-section">
     <h2 id="neurodivergence" class="tabs-title">Neurodiversity </h2>
@@ -1565,6 +1636,185 @@ nav a {
 
 
 </section>
+
+
+
+
+
+
+
+
+
+<section class="tabs-section">
+
+    <h>⚠️ This is the <strong>Concept for the App</strong>.
+      The following are its Key Modules and Features.</h>
+ 
+
+
+  <h2 id="apptentative" class="tabs-title">Mind the Brain App concept </h2>
+        <div class="educ-card">
+
+            <h3 style="text-align: center;">1. 🧠 Interactive Education Hub (For All Users)</h3>
+
+        <li>Guided, age-appropriate courses on neurodiversity, sensory design, mental health, and inclusive practices.</li>
+        <li>Tracks for:
+          <ul>
+            <li>Families & caregivers</li>
+            <li>Educators & therapists</li>
+            <li>Design professionals</li>
+            <li>Teens & children</li>
+          </ul>
+        </li>
+        <li>Modular content: audio, visuals, real-life examples, quizzes</li>
+        <li>Co-created with neurodivergent voices and inclusive design experts</li>
+        <li>Gamified progress tracking with achievement badges</li>
+               
+        </div>
+        
+        <div class="educ-card">
+
+      <h3>🏙️ Design & Map Toolkit (For Public Spaces + Home Environments)</h3>
+      <p>Use design as a tool for systemic change and daily comfort.</p>
+
+      <h4>a. Neuro-Inclusive Map (Community-Powered)</h4>
+      <ul>
+        <li>Tag and review calming or overstimulating spaces</li>
+        <li>Map accessible sensory-friendly areas: parks, schools, cafés, clinics, etc.</li>
+        <li>AI-based environment analysis using phone sensors to assess lighting, noise, and movement</li>
+        <li>Safe routes planning for overstimulation-prone individuals</li>
+      </ul>
+
+      <h4>b. Home & School Space Planner</h4>
+      <ul>
+        <li>Drag-and-drop interface for customizing home/school environments</li>
+        <li>Templates for low-stimulation rooms, calming corners, sensory paths</li>
+        <li>AR Visualization: see how changes affect environment mood</li>
+        <li>Linked with emotional check-in tools to adjust over time</li>
+      </ul>
+    </div>
+  
+
+
+
+
+    <div class="educ-card">
+      <h3>👨‍👩‍👧‍👦 Family & Support Circle Dashboard</h3>
+      <p>Because environments are part of systems, not isolated.</p>
+      <ul>
+        <li>Share updates across caregivers, teachers, and therapists</li>
+        <li>Collaborative goal tracking (sleep, anxiety, meltdowns, transitions)</li>
+        <li>Access to daily strategies and affirmations personalized by user mood</li>
+        <li>Visual mood board or “how I feel today” journal with emojis, colors, or drawings (for kids)</li>
+        <li>Automated reports to use in therapy or school meetings</li>
+      </ul>
+    </div>
+
+
+    <div class="educ-card">
+      <h3>🎨 Create & Share: Neuro-Inclusive Projects (Empowerment)</h3>
+      <p>Let families and communities become co-designers of inclusive futures.</p>
+      <ul>
+        <li>Upload photos or drawings of inclusive spaces</li>
+        <li>Showcase before/after case studies</li>
+        <li>Host or join mini design challenges</li>
+        <li>Collaborate on virtual projects (e.g., redesigning a park to be more inclusive)</li>
+        <li>Participate in storytelling campaigns to raise awareness</li>
+      </ul>
+    </div>
+
+
+
+
+    <div class="educ-card">
+      <h3>🔔 Advocacy & Policy Toolkit</h3>
+      <p>Designed to equip everyday people and professionals with tools to push for change.</p>
+      <ul>
+        <li>Downloadable policy guides based on country/region</li>
+        <li>Templates for letters to city councils, schools, or workplaces</li>
+        <li>Integration with local networks and NGOs</li>
+        <li>“Design for SDGs” module: shows how their actions relate to the UN Goals</li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <div class="educ-card">
+    <h2>What Makes it Unique</h2>
+
+    <table class="features-table">
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Why It’s Unique</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Merges education + design + family support</td>
+          <td>No current app unites these at this depth</td>
+        </tr>
+        <tr>
+          <td>Based on <strong>real-life input from neurodivergent users</strong></td>
+          <td>Community co-creation, not just clinical</td>
+        </tr>
+        <tr>
+          <td>Uses <strong>design as therapy</strong> and activism</td>
+          <td>Empowers users to make change spatially</td>
+        </tr>
+        <tr>
+          <td>Modular for <strong>home, school, and public</strong></td>
+          <td>Comprehensive toolkit for all scales</td>
+        </tr>
+        <tr>
+          <td>Promotes storytelling and visual empowerment</td>
+          <td>Ideal for visual thinkers, designers, families</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+        
+    </div>
+  </div>
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <section class="tabs-section">
